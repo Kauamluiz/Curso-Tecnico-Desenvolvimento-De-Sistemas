@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel="stylesheet" href="Quiz.CSS">
+    </head>
+    <body>
+        <div id="container">
+            <div id="espaco">
+
+            </div>
+            <div id="Titulo">
+                <label id="titulo1">Bem-vindo ao Quiz</label>
+
+            </div>
+            <div id="pontos">
+                <label id="expli1">- Perguntas e respostas: as perguntas serão mostradas com temas variados, serão feitas 5 perguntas.<br> E para responder digite A, B, C, D ou E.</label><br>
+                <label id="expli2">- Dificuldade: cada nível de dificuldade apresenta diferentes perguntas em ordem aleatória.</label><br>
+                <label id="expli3">- Pontos: a cada pergunta que você acertar ira receber 3 pontos, e se errar ira perder 1 ponto,<br>o maximo de pontos é igual a 15.</label>
+
+
+            </div>
+
+            <div id="selecao">
+                <div id="esp"></div>
+                <div id="dif">
+                    <label>Dificuldade</label><br>
+                </div>
+                <div id="sel">
+                    <button id="facil" onclick="facil()">Facíl</button>
+                    <button id="normal" onclick="normal()">Normal</button>
+                    <button id="dificil" onclick="dificil()">Dificil</button>
+
+                </div>
+            </div>
+        </div>
+        <script src="Quiz.JS"></script>
+    </body>
+</html>

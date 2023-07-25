@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Loja do Kauam</title>
+        <link rel="stylesheet" href="CRUD 4.CSS">
+    </head>
+    <body bgcolor="lime" onload="listaProdutos()">
+        <div id="container">
+            <div id="cima">
+                <center> 
+
+                    <h1>Bem-vindo a loja do kauam</h1>
+
+                </center>
+            </div>
+            <div id="meio">
+                <div id="produtostexto">
+                    <div id="interface">
+                        <label class="texto">Nome do produto:</label>
+                        <input id="ProdutosDigitados">
+                        <label class="texto">Valor do produto:</label>
+                        <input id="ValorDigitados" type="number">
+                        <label class="texto">Marca do produto:</label>
+                        <input id="MarcaDigitados">
+                        <button id="cadastrar" onclick="CadastrarProdut()">Cadastrar</button>
+                        <button id="alterar" onclick="AlterarProdut()">Alterar</button>
+                        <button id="deletar" onclick="DeletarProdut()">Deletar</button>
+                    </div>
+                    <div id="mensagem"></div>
+                </div>
+                <div id="lista">
+                    <div id="esp">
+                        <center>
+                            <label id="nome">Lista</label>
+                        </center>
+                    </div>
+                    <div id="produt"></div>
+                </div>
+            </div>
+            <script src="CRUD 4.JS"></script>
+        </div>
+    </body>
+</html>

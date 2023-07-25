@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastor</title>
+        <link rel="stylesheet" href="cast.CSS">
+        
+    </head>
+    <body onload="entrar()">
+        <div id="container">
+            <div id="esquerda" class="textos2">
+                <button id="link" onclick="voltar()">Voltar</button>
+                
+            </div>
+            <div id="meio" class="textos2">
+                <div id="cima-meio" class="textos2">
+                    <h1 id="texto">Cadastrar</h1><br>
+                    
+                    <input id="nome" placeholder="          Nome completo"><br>
+
+                    <form name="f1" id="gmail1">
+                    <input id="gmail" placeholder="         Gmail"  name="gmail1"  onblur="validacaoEmail(f1.gmail1)"  maxlength="60" size='65'>
+                    </form><br>
+
+                    <input id="senha" type="password" placeholder="         Senha"><br>
+                    <input id="tele" placeholder="          Telefone"><br>
+                    
+                    <label id="texto1">Data de nascimento</label><br>
+                    
+                    <input id="data" type="date"><br>
+                    <button id="cadast" onclick="CadastrarConta()">Cadastrar</button>
+                    
+                </div>
+                <div id="baixo-meio" class="textos2">
+                    <div id="verificar"></div>
+                    
+
+                </div>
+            </div>
+            <div id="direita" class="textos2">
+                
+            </div>
+        </div>
+        <script src="cast.JS"></script>
+    </body>
+</html>

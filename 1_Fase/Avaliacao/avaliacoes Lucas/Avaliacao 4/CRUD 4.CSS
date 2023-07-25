@@ -1,0 +1,206 @@
+@font-face {
+
+    font-family: 'Kanit';
+    src: url(Kanit-Medium.ttf) format('truetype');
+
+}
+
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+
+}
+
+#container{
+
+    height: 100%;
+    background-color: lime;
+
+}
+
+#cima{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit';
+    font-size: 30px;
+
+}
+
+#meio{
+    height: 80%;
+    width: 100%;
+    display: flex;
+
+}
+
+#produtostexto{
+    height: 100%;
+    width: 40%;
+    font-family: 'Kanit';
+    font-size: 20px;
+
+}
+
+.texto{
+    height: 5%;
+    width: 60%;
+    font-family: 'Kanit';
+    font-size: 30px;
+
+}
+
+#ProdutosDigitados{
+    height: 8%;
+    width: 60%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    padding-left: 7px;
+    border-radius: 60px;
+    margin: 10px;
+
+}
+
+#ValorDigitados{
+    height: 8%;
+    width: 60%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    padding-left: 7px;
+    border-radius: 60px;
+    margin: 10px;
+
+}
+
+#MarcaDigitados{
+    height: 8%;
+    width: 60%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    padding-left: 7px;
+    border-radius: 60px;
+    margin: 10px;
+
+}
+
+#cadastrar{
+    height: 8%;
+    width: 30%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px;
+    background-color: lime;
+    margin: 10px;
+
+}
+
+#cadastrar:hover 
+
+{ background-color: rgb(3, 161, 3);
+
+}
+
+#alterar{
+    height: 8%;
+    width: 30%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px;
+    background-color: lime;
+    margin: 10px;
+
+}
+
+#alterar:hover 
+
+{ background-color: rgb(3, 161, 3);
+
+}
+
+#deletar{
+    height: 8%;
+    width: 30%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px;
+    background-color: lime;
+    margin: 10px;
+
+}
+
+#deletar:hover 
+
+{ background-color: rgb(3, 161, 3);
+
+}
+
+
+#lista{
+    height: 100%;
+    width: 60%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    
+}
+
+#esp{
+    height: 10%;
+    width: 100%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#nome{
+    height: 10%;
+    width: 60%;
+    font-family: 'Kanit';
+    font-size: 50px;
+
+}
+
+#produt{
+    height: 90%;
+    width: 100%;
+    font-family: 'Kanit';
+    font-size: 20px;
+
+}
+
+#interface{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kanit';
+    font-size: 20px;
+
+}
+
+#mensagem{
+    height: 15%;
+    width: 100%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}

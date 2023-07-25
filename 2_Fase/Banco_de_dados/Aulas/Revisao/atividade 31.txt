@@ -1,0 +1,117 @@
+-- questao 2
+select
+  quiz.idquiz
+  , pergunta.enunciado
+  , opcao.texto
+from
+  quiz
+  inner join pergunta on
+  quiz.idquiz = pergunta.idquiz
+  inner join resposta on
+  pergunta.idpergunta = resposta.idpergunta
+  inner join opcao on
+  resposta.idopcao = opcao.idopcao
+where
+  quiz.idquiz = 2;
+
+-- questao 3
+select
+  participante.nome
+  , participante.email
+  , resposta.opcao
+  , pergunta.enunciado
+  , quiz.titulo
+  , quiz.descricao
+from
+  participante
+  inner join resposta on
+  participante.idparticipante = resposta.idparticipante
+  inner join opcao on
+  resposta.idopcao = opcao.idopcao
+  inner join pergunta on
+  opcao.idpergunta = pergunta.idpergunta
+  inner join quiz on
+  pergunta.idquiz = quiz.idquiz;
+
+-- quetao 4
+select
+  opcao.certa
+  , quiz.tipo
+  , pergunta.idpergunta
+  , pergunta.enunciado
+  , opcao.*
+from 
+  quiz
+  inner join pergunta on
+  quiz.idquiz = pergunta.idquiz
+  inner join opcao on
+  pergunta.idpergunta = opcao.idpergunta
+where
+  quiz.tipo = 'T';
+
+-- questao 5
+select
+  pergunta.idpegunta
+  , count(participante.idparticipante)
+from
+  participante
+  inner join resposta om
+  participante.idparticipante = resposta.idparticipante
+  inner join pergunta on
+  pergunta.idpergunta = resposta.idpergunta
+group by
+  pergunta.idpergunta;
+
+-- questao 6
+select
+  matricula.idmatricula
+  , disciplina.iddisciplina
+  , disciplina.nome
+  , aluno.idaluno
+  , aluno.nome
+  , matricula.ano
+  , matricula.semestre
+  , matricula.situacao
+from
+  aluno
+  inner join matricula on
+  aluno.idaluno = matricula.idaluno
+  inner join disciplina on
+  matricula.iddisciplina = disciplina.iddisciplina
+where
+  matricula.ano = 2015 and matricula.semestre = 1;
+
+-- questao 7
+select
+  aluno.idaluno
+  , aluno.nome
+  , disciplina.iddisciplina
+  , disciplina.nome
+  , matricula.situacao
+from
+  aluno
+  inner join matricula on
+  aluno.idaluno = matricula.idaluno
+  inner join disciplina on
+  matricula.iddisciplina = disciplina.iddisciplina
+where
+  matricula.ano = 2015
+  , matricula.semestre = 2
+  and disciplina.nome = 'Antropologia teologica'
+order by
+  aluno.nome;
+
+-- questao 8
+select
+  matricula.ano
+  , matricula.semestre
+  , matricula.situacao
+  , count(matricula.idmatricula)
+  , count(disciplina.iddisciplina)
+  , count(aluno.idaluno)
+from
+  aluno
+  inner join matricula on
+  aluno.idaluno = matricula.idaluno
+  inner join disciplina on
+  matricula.iddisciplina = disciplina.iddisciplina;

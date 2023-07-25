@@ -1,0 +1,68 @@
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+
+}
+
+#container{
+
+    height: 100%;
+    background-color: blue;
+}
+
+#topo{
+
+    height: 20%;
+    background-color: lime;
+}
+
+#meio{
+
+    height: 70%;
+    background-color: red;
+    display: flex;
+
+}
+
+#metadeEsquerda{
+    
+    height: 100%;
+    width: 50%;
+    background-color: pink;
+
+    
+}
+
+#meioCima{
+    height: 65%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#meioBaixo{
+    height: 35%;
+    background-color: black;
+}
+
+#metadeDireita{
+
+    height: 100%;
+    width: 50%;
+    margin: 0%;
+    background-color: gray;
+
+}
+
+
+#baixo{ 
+
+    height: 10%;
+    background-color: gold;
+} 

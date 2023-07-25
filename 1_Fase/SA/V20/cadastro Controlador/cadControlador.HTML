@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Dashboard - cadastrar controlador</title>
+        <link rel="stylesheet" href="cadControlador.CSS">
+    </head>
+    <body bgcolor="#5c5c5c" onload="disposit()">
+        <div id="container">
+            <div id="menu">
+                <div id="usuarioLogado">
+                    <center>
+                    <img src="logo2711.png" id="logotipo">
+                    </center>
+
+                </div>
+
+
+                <div id="telas">
+
+                    <button id="botoes" onclick="Dash()">DASHBOARD</button>
+                    <button id="botoes" onclick="ambiente()">CADASTRAR AMBIENTE</button>
+                    <button id="botoes" onclick="dispositivo()">CADASTRAR DISPOSITIVO</button>
+                    <button id="botoes" onclick="PerfilUser()">PERFIL</button>
+
+                </div>
+                <div id="deslog">
+                    <button id="botoes" onclick="Delet()">SAIR</button>
+
+                </div>
+            </div>
+                <div id="tela">
+                <div id="esquerda">
+                    <div id="baixo">
+                        <div id="titulo">
+                            <label id="textoT">DISPOSITIVOS</label>
+                        </div>
+                        <div id="dispo">
+                            <div id="textos"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="direita">
+                    <div id="dir-baixo">
+                        <div id="alteracoes">
+                            <div id="esque">
+                                <h1 class="textos2"> CADASTRO DE CONTROLADOR </h1>
+
+                                <label class="textos2">Nome do controlador</label>
+                                <input class="mudar" id="controlador">
+                                <label class="textos2">Digite o serial</label>
+                                <input class="mudar" id="serial"><br><br>
+                                <select id="sel" class="mudar2" >                                                 
+    
+                                <option value="" disabled selected>Selecione o ambiente</option>
+                                                        
+                                <script src="main.js"></script>
+                                </select>
+                                <div id="botaum">
+                                    <button id="botoes" onclick="CadastrarControlador()">SALVAR</button>
+                                    <button id="botoes" onclick="ExcluirControlador()">EXCLUIR CONTROLADOR</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="mensag123" class="textos2"></div>
+                            </div>
+                        </div>
+                    </div>                    
+
+                </div>
+            </div>
+            <script src="cadControlador.JS"></script>
+        </div>
+    </body>
+</html>

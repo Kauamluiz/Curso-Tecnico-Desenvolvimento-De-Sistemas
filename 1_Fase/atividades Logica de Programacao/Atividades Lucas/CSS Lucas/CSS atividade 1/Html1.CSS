@@ -1,0 +1,160 @@
+@font-face {
+
+    font-family: 'Kanit';
+    src: url(Kanit-Medium.ttf) format('truetype');
+
+}
+
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+
+}
+
+#container{
+
+    height: 100%;
+    background-color: white;
+    display: flex;
+
+}
+
+#Esquerda{
+
+    height: 100%;
+    width: 50%;
+
+}
+
+#topo-esquerdo{
+    height: 10%;
+    width: 100%;
+
+}
+
+#topo-cima-esquerdo{
+    height: 10%;
+    width: 100%;
+
+}
+
+#meio-cima{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img{
+    height: 100%;
+    width: 10%;
+
+}
+
+#centro{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#texto1{
+    font-family: 'Kanit';
+    font-size: 20px;
+
+}
+
+#nome{
+    height: 20%;
+    width: 80%;
+    margin: 10px;
+    border-bottom: 40px;
+    font-family: 'Kanit';
+    font-size: 30px;
+    
+}
+
+#senha{
+    height: 20%;
+    width: 80%;
+    margin: 10px;
+    border-bottom:  40px;
+    font-family: 'Kanit';
+    font-size: 30px;
+
+}
+
+#start1{
+
+    height: 16%;
+    width: 35%;
+    margin: 2px 2px 2px 2px;
+    background-color: rgb(255, 123, 0);
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px;
+
+}
+
+#baixo{
+    height: 10%;
+    width: 100%;
+
+}
+
+#titulo-login{
+    font-family: 'Kanit';
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Direita{
+
+    height: 100%;
+    width: 50%;
+    background-color: hsl(29, 100%, 50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#titulo{
+    font-family: 'Kanit';
+    font-size: 65px;
+
+}
+
+#texto{
+    font-family: 'Kanit';
+    font-size: 40px;
+
+}
+
+#start{
+
+    height: 10%;
+    width: 35%;
+    margin: 2px 2px 2px 2px;
+    background-color: rgb(255, 123, 0);
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px;
+
+}

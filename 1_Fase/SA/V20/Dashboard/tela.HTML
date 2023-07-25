@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="tela.CSS">
+    </head>
+    <body bgcolor="#5c5c5c">
+        <div id="container">
+            <div id="menu">
+                <div id="usuarioLogado">
+                    <center>
+                    <img src="logo2711.png" id="logotipo">
+                    </center>
+
+                </div>
+
+
+                <div id="telas">
+
+                    <button id="botoes" onclick="Dash()">DASHBOARD</button>
+                    <button id="botoes" onclick="ambiente()">CADASTRAR AMBIENTE</button>
+                    <button id="botoes" onclick="dispositivo()">CADASTRAR DISPOSITIVO</button>
+                    <button id="botoes" onclick="PerfilUser()">PERFIL</button>
+
+                </div>
+                <div id="deslog">
+                    <button id="botoes" onclick="Delet()">SAIR</button>
+
+                </div>
+            </div>
+            <div id="tela">
+                <div id="esquerda">
+                    
+                    <div id="cima">
+                        <label id="mensag">Selecione o ambiente</label>
+                        <select id="sel" class="mudar2" >
+                                                                           
+    
+                            <option value="" disabled selected>Selecione o ambiente</option>
+                                                    
+                        </select>
+                        <button id="botoes" onclick="xyzA()">OK</button>
+                        <button onclick="XyzA()">AAAA</button>
+                       
+                        <!-- <label id="mensag">PROCURAR UM DISPOSITIVO</label>
+                            <input id="procurar">
+                            <button id="buscar">PROCURAR</button> -->
+                            <BR><BR>
+                                <label id="mensag">Selecione o dispositivo 1 </label>
+                                <select id="sel2" class="mudar2" >                                                 
+                                    
+                                    <option value="" disabled selected>Selecione o ambiente</option>
+                                    
+                                    
+                                </select>
+                                
+                            <BR><BR>
+                                <label id="mensag">Selecione o dispositivo 2</label>
+                                <select id="sel3" class="mudar2" >                                                 
+                                    
+                                    <option value="" disabled selected>Selecione o ambiente</option>
+                                    
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div id="direita">
+                    
+                            <div id="direita1"><BR>
+                        
+                        <p>
+                            <div id="saidaDigital"><strong> DISPOSITIVO DESLIGADO
+                                
+                            </strong></div>
+                            <button class="button9" onclick="clickOn()">ON</button> 
+                            <button class="button9 button8" onclick="clickOff()">OFF</button> 
+                        </p>
+                        <p>
+                            <div>Temperatura em °C</div>
+                            <div id="entradaAnalogica"> -- </div>
+                        </p>
+                        
+                        
+                    </div>
+                    
+                    
+                    
+                    <div id="direita2"><BR>
+                        
+                        
+                        
+                    </div>                                   
+                    
+                </div>
+            </div>
+            
+        </div>
+        <script src="tela.JS"></script>
+        <script src="main.js"></script>
+        <script src="main2.js"></script>
+        <script src="main3.js"></script>
+        <script src="file.js"></script>
+    </body>
+    </html>
+    
+    
+    
+    

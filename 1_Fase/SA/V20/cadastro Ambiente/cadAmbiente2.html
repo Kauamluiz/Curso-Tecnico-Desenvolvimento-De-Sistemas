@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Dashboard - cadastrar ambiente</title>
+        <link rel="stylesheet" href="cadAmbiente.css">
+    </head>
+    <body bgcolor="#5c5c5c" onload="disposit(), ListarAmbiente()">
+        <div id="container">
+            <div id="menu">
+                <div id="usuarioLogado">
+                    <center>
+                    <img src="logo2711.png" id="logotipo">
+                    </center>
+
+                </div>
+
+
+                <div id="telas">
+
+                    <button id="botoes" onclick="Dash()">DASHBOARD</button>
+                    <button id="botoes" onclick="ambiente()">CADASTRAR AMBIENTE</button>
+                    <button id="botoes" onclick="dispositivo()">CADASTRAR DISPOSITIVO</button>
+                    <button id="botoes" onclick="PerfilUser()">PERFIL</button>
+
+                </div>
+                <div id="deslog">
+                    <button id="botoes" onclick="Delet()">SAIR</button>
+
+                </div>
+            </div>
+                <div id="tela">
+                <div id="esquerda">
+                    <div id="baixo">
+                        <div id="titulo">
+                            <label id="textoT">DISPOSITIVOS</label>
+                        </div>
+                        <div id="dispo">
+                            <div id="textos"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="direita">
+                    <div id="dir-baixo">
+                        <div id="alteracoes">
+                            <div id="esque">
+                                <h1 class="textos2"> Crie aqui o seu ambiente </h1>
+    
+                                <label class="textos2">Nome do ambiente</label><br>
+                                <input class="mudar" id="ambienteNome">
+                                <div id="botaum">
+                                <button id="botoes" onclick="CadastrarAmbiente()">Salvar</button>
+                                <button id="botoes" onclick="ExcluirAmbiente()">Excluir Ambiente</button>
+                            </div><br>
+                                <label class="textos2">Ambientes Cadastrados</label>
+                                <div id="listarAmbientes" class="textos"></div>
+                        </div>
+                        <div id="mensag123" class="textos2">
+                                    
+        
+                                  
+        
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <script src="cadAmbiente.js"></script>
+        </div>
+    </body>
+</html>
+
+

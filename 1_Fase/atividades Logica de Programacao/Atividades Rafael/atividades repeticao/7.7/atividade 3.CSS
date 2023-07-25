@@ -1,0 +1,19 @@
+@font-face {
+
+    font-family: 'Kanit';
+    src: url(Kanit-Medium.ttf) format('truetype');
+
+}
+
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    margin: 0;
+
+}

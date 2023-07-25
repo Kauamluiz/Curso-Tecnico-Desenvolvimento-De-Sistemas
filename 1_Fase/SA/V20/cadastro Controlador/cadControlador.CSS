@@ -1,0 +1,522 @@
+
+@font-face {
+    font-family: 'Kanit';
+    src: url(Kanit-Medium.ttf) format('truetype');
+  
+}
+
+@font-face {
+    font-family: 'GabrielSans';
+    src: url(GabrielSansCond-Trial-Bold.ttf) format('truetype');
+}
+
+@font-face {
+     
+    font-family: 'GabrielSansN';
+    src: url(GabrielSansCond-Trial-Normal.ttf) format('truetype');
+
+
+}
+
+
+#direit{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(92, 92, 92);
+}
+
+#link{
+
+    height: 5%;
+    width: 60%;
+    background-color: rgb(75, 85, 108);
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px; 
+    margin: 5%;
+    
+}
+
+#link:hover 
+
+{ background-color: rgb(65, 64, 64); 
+
+}
+
+
+#table{
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    border-radius: 60px;
+    font-family: 'Kanit';
+    font-size: 20px;
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textos{
+    height: 7%;
+    width: 30%;
+    font-family: 'GabrielSansN';
+    font-size: 20px;
+
+}
+
+.textos2
+{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GabrielSans';
+    color:#4B556C;
+    font-size: 25px;
+    margin: 1px;
+    letter-spacing: 2px;
+    height: 8%;
+    width: 40%;
+    display:flex;
+    font-family: 'GabrielSansN';
+    
+}
+
+
+.mudar{
+    height: 7%;
+    width: 65%;
+    font-family: 'GabrielSansN';
+    font-size: 20px;
+    border-radius: 60px;
+    padding-left: 10px;
+
+}
+
+.mudar2{
+    height: 7%;
+    width: 66%;
+    font-family: 'GabrielSansN';
+    font-size: 20px;
+    border-radius: 60px;
+    padding-left: 10px;
+
+}
+
+#esque{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#mensag123{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#alteracoes{
+    height: 100%;
+    width: 95%;
+}
+
+#dir-baixo{
+    height: 70%;
+    width: 100%;
+    margin: 6% 0% 0% 0%;
+    
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+    margin: 5%;
+
+}
+
+#info{
+    height: 100%;
+    width: 60%;
+    margin: 0% 0% 0% 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#informacoes{
+    height: 90%;
+    width: 90%;
+    font-family: 'Kanit';
+    font-size: 30px;
+
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    
+
+}
+
+
+#dir-cima{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    
+}
+
+#foto{
+    height: 100%;
+    width: 20%;
+
+}
+
+
+#meio{
+    height: 100%;
+    width: 60%;
+    background-color: azure;
+    border-radius: 40px 60px;
+
+}
+
+#menu{
+    height: 11.5%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#usuarioLogado{
+    height: 110%;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#telas{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#botaum{
+    
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    align-items: center;
+    
+}
+
+#deslog{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#deslogar{
+    height: 40%;
+    width: 50%;
+    font-family: 'GabrielSans';
+    font-size: 18px;
+    border-radius: 60px;
+    margin: 3%;
+    background-color: rgb(182, 180, 180)
+
+}
+
+#deslogar:hover 
+
+{ background-color: rgb(75, 85, 108);
+
+}
+
+
+#botoes{
+
+    box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background-color:transparent;
+	border-radius:6px;
+	border:0px solid #b2b8ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family: 'GabrielSans';
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ced9bf;
+    display: flex;
+   
+    }
+
+
+    #botoes:hover  {
+        background-color: rgb(224, 222, 222);
+        
+    }
+    #botoes.active {
+        position:relative;
+        top:1px;
+    }
+    
+
+
+
+
+
+
+
+
+#tela{
+    height: 88%;
+    width: 100%;
+    display: flex;
+    background-color: #4B556C;
+    
+
+}
+
+#logotipo{
+    height: 120%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#esquerda{
+    height: 100%;
+    width: 30%;
+    background-color: #4B556C;
+    
+        
+}
+
+#mensag{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GabrielSans';
+    color:#dbdbdb;
+    font-size: 16px;
+    margin: 1px;
+    letter-spacing: 2px
+
+}
+
+#procurar{
+    height: 16%;
+    width: 70%;
+    font-family: 'Kanit';
+    font-size: 20px;
+    border-radius: 60px;   
+    padding-left: 10px;
+    margin: 5px;
+
+}
+
+#buscar{
+    height: 20%;
+    width: 40%;
+    font-family: 'GabrielSans';
+    color:#dbdbdb;
+    background-color:#595e68;
+    font-size: 16px;
+    border-radius: 60px;    
+    margin: 5px;
+
+}
+
+#buscar:hover 
+
+{ background-color: rgb(224, 222, 222);
+
+}
+
+#baixo{
+    height: 100%;
+    width: 100%;
+
+}
+
+#titulo{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#dispo{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'GabrielSansN';
+    color:#dbdbdb;
+    letter-spacing: 1px;
+
+}
+
+#textoT{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'GabrielSansN';
+    color:#dbdbdb;
+    font-weight: bold;
+    font-size: 27px;
+    margin: 1px;
+    letter-spacing: 6px;
+
+}
+
+#direita{
+    height: 100%;
+    width: 70%;
+    background-color: rgb(194, 194, 194);
+
+}
+
+#textos{
+    height: 92%;
+    width: 92%;
+    font-family: 'Kanit';
+    font-size: 25px;
+    overflow-y: scroll;
+
+}
+
+    ::-webkit-scrollbar {
+        width: 15px;
+        border-radius: 30px;
+      }
+      
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgb(131, 130, 130);
+        border-radius: 30px;
+    }
+      
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background:rgb(194, 194, 194);
+        border-radius: 30px;
+    }
+      
+      /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(75, 75, 75);
+        border-radius: 30px;
+    }
+
+
+#buton{
+    height: 7%;
+    width: 25%;
+    border-radius: 15px;
+    margin: 3%;
+    font-family: 'Kanit';
+
+}
+
+#buton:hover 
+
+{ background-color: rgb(92, 92, 92);
+    opacity: 0.9;
+
+}
+
+
+#botoes2{
+    
+    height: 100%;
+    width: 30%;
+    box-shadow:inset 0px 0px 14px -3px #f2fadc;
+	background-color:transparent;
+	
+	border:0px solid #4B556C;
+	display:inline-block;
+	cursor:pointer;
+	color:#757d6f;
+	font-family: 'GabrielSans';
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	color:#4B556C;
+    display: flex;
+    height: 7%;
+    width: 25%;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+   
+    }
+
+
+    #botoes2:hover  {
+        background-color: rgb(224, 222, 222);
+        
+    }
+    #botoes2.active {
+        position:relative;
+        top:1px;
+    }
+    
+
+
+
+

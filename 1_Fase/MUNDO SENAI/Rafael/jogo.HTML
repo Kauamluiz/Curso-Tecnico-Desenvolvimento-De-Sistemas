@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="jogo.CSS">
+
+    </head>
+    <body>
+        <div id="container">
+            <div id="intro">
+                <label id="texto">Resolva a equação abaixo:</label><br>
+            </div>
+            <div id="calc">
+                <script>
+let pontos = 0
+let perguntas = 0
+let operacao
+
+do{ 
+
+    let n1 = gerarNumero(0, 200)
+    let n2 = gerarNumero(0, 200)
+    let sinal = gerarNumero(1, 4)
+    
+
+    if(sinal == 1){
+        operacao = "-"
+        resultado = n1 - n2
+
+    }
+    if(sinal == 2){
+        operacao = "+"
+        resultado = n1 + n2
+
+    }
+    if(sinal == 3){
+        operacao = "*"
+        resultado = n1 * n2
+
+    }
+    if(sinal == 4){
+        operacao = "/"
+        resultado = n1 / n2
+
+    }
+    
+    document.getElementById("calc").innerHTML = `${n1} ${operacao} ${n2}`
+
+    perguntas ++
+
+}while(perguntas < 10)
+
+
+function gerarNumero(min, max){
+    return Math.floor(Math.random() * (max-min+1))+ min;
+}
+                </script>
+            </div>
+            <div id="resposta">
+                <input id="resp"><br>
+                <button id="c1" onclick="Calculo()">Calcular</button>
+            </div>
+            <div id="pont">
+
+            </div>
+            <script src="jogo.JS"></script>
+            <script src="numeros.JS"></script>
+        </div>
+    </body>
+</html>
