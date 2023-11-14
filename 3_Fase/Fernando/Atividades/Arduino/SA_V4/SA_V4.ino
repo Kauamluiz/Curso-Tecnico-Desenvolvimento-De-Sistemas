@@ -19,7 +19,7 @@ char json_andares[100];
 #define SOUND_SPEED 0.034
 long duration;
 float distanceCm;
-int valor_andares;
+int valor_sensor;
 int espaco1 = 0; 
 int espaco2 = 0;
 
@@ -65,7 +65,6 @@ void leitura_sinais()
     Serial.print("Distance (cm): ");
     Serial.println(distanceCm);
     digitalWrite(LedPin, HIGH);
-    andares = 1;
     espaco1 = 1;
     espaco2 = 1;
     if(espaco1 == 0){ 
@@ -86,7 +85,6 @@ void leitura_sinais()
     Serial.print("Distance (cm): ");
     Serial.println(distanceCm);
     digitalWrite(LedPin, HIGH);
-    andares = 2;
     espaco1 = 1;
     espaco2 = 1;
     if(espaco1 == 0){ 
@@ -107,7 +105,6 @@ void leitura_sinais()
     Serial.print("Distance (cm): ");
     Serial.println(distanceCm);
     digitalWrite(LedPin, HIGH);
-    andares = 3;
     espaco1 = 1;
     espaco2 = 1;
     if(espaco1 == 0){ 
@@ -128,7 +125,6 @@ void leitura_sinais()
     Serial.print("Distance (cm): ");
     Serial.println(distanceCm);
     digitalWrite(LedPin, LOW);
-    andares = 0;
     espaco1 = 0;
     espaco2 = 0;
     if(espaco1 == 0){ 
@@ -139,22 +135,22 @@ void leitura_sinais()
     }
   }
 
-  valor_andares = andares;
+  valor_sensor = distanceCm;
 
 }
 
 void converte_json()
 {
-  StaticJsonDocument<300> sjson_andares;
+  StaticJsonDocument<300> sjson_sensor;
 
-  sjson_andares["variable"] = "andares";
-  sjson_andares["value"] = valor_andares;
-  serializeJson(sjson_andares, json_andares);
+  sjson_sensor["variable"] = "distancia";
+  sjson_sensor["value"] = valor_sensor;
+  serializeJson(sjson_sensor, json_sensor);
 }
 
 void envia_msg()
 {
-  client.publish("/andares", json_andares); 
+  client.publish("/distancia", json_sensor); 
 }
 
 //loop do programa
